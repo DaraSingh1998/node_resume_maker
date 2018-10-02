@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Resume Form</title>
+
+<meta name="viewport" content="width=device-width"/>
+<meta charset="UTF-8">
+
+<link rel="stylesheet" type="text/css" href="resume.css">
+<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
+
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body id="top">
+<div id="cv" class="instaFade">
+  <form method="post" action="/indeex" id="resume">
+	<div class="mainDetails">
+
+		<div id="name">
+			<h1 class="quickFade delayTwo"><label>Name</label><input type="text" name="name" placeholder="Name" required></h1>
+		</div>
+
+		<div id="contactDetails" class="quickFade delayFour">
+			<ul>
+				<li>e: <label>Email</label><input type="email" name="email" placeholder="Email" required></li>
+				<li>m: <label>Phone No.</label><input type="text" name="phone" placeholder="Phone no." required></li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+
+	<div id="mainArea" class="quickFade delayFive">
+		<section>
+			<article>
+				<div class="sectionTitle">
+					<h1>Personal Profile</h1>
+				</div>
+
+				<div class="sectionContent">
+          <textarea rows="6" cols="70" name="personal" form="resume" required></textarea>
+				</div>
+			</article>
+			<div class="clear"></div>
+		</section>
+
+
+		<section>
+			<div class="sectionTitle">
+				<h1>Work Experience</h1>
+			</div>
+
+			<div class="sectionContent">
+				<article>
+					<h2><label>Job Title</label><input type="text" name="title1" placeholder="Job Title"></h2>
+					<p class="subDetails"><label>From-To</label><input type="text" name="ft" placeholder="From-To"></p>
+					<p><label>Job Description</label><textarea rows="6" cols="70" name="desciption1" form="resume"></textarea></p>
+  			</article>
+
+        <article>
+					<h2><label>Job Title</label><input type="text" name="title2" placeholder="Job Title"></h2>
+					<p class="subDetails"><label>From-To</label><input type="text" name="ft" placeholder="From-To"></p>
+					<p><label>Job Description</label><textarea rows="6" cols="70" name="description2" form="resume"></textarea></p>
+  			</article>
+
+			</div>
+			<div class="clear"></div>
+		</section>
+
+
+		<section>
+			<div class="sectionTitle">
+				<h1>Key Skills</h1>
+			</div>
+
+			<div class="sectionContent">
+				<ul class="keySkills">
+					<li><label>A Key Skill</label><input type="text" name="skill1" placeholder="A Key Skill"></li>
+					<li><label>A Key Skill</label><input type="text" name="skill2" placeholder="A Key Skill"></li>
+					<li><label>A Key Skill</label><input type="text" name="skill3" placeholder="A Key Skill"></li>
+					<li><label>A Key Skill</label><input type="text" name="skill4" placeholder="A Key Skill"></li>
+					<li><label>A Key Skill</label><input type="text" name="skill5" placeholder="A Key Skill"></li>
+					<li><label>A Key Skill</label><input type="text" name="skill6" placeholder="A Key Skill"></li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</section>
+
+
+		<section>
+			<div class="sectionTitle">
+				<h1>Education</h1>
+			</div>
+
+			<div class="sectionContent">
+				<article>
+					<h2><label>College/University</label><input type="text" name="college1" placeholder="College/University" required></h2>
+					<p><label>Deatils</label><textarea rows="6" cols="70" name="college1-details" form="resume" required></textarea></p>
+				</article>
+
+				<article>
+					<h2><label>College/University</label><input type="text" name="college2" placeholder="College/University"></h2>
+					<p><label>Deatails</label><textarea rows="6" cols="70" name="college2-details" form="resume"></textarea></p>
+				</article>
+			</div>
+			<div class="clear"></div>
+		</section>
+
+	</div>
+    <button>Submit</button>
+</form>
+</div>
+<!-- <script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3753241-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script> -->
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Resume</title>
+    <link rel="stylesheet" type="text/css" href="resume.css">
+  </head>
+  <body>
+    <form>
+      <label>Name</label>
+      <input readonly=true type="text" name='name' value="{{data.name}}">
+      <br><label>Email</label>
+      <input readonly=true type="email" name='email' value="{{data.email}}">
+      <br><label>Address</label>
+      <input readonly type="text" name='add' value="{{data.add}}">
+    </form>
+    <script src="/js/libs/jquery-min.js"></script>
+    <script src="/js/libs/deparam.js"></script>
+  </body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Resume Form</title>
+
+<meta name="viewport" content="width=device-width"/>
+<meta charset="UTF-8">
+
+<link rel="stylesheet" type="text/css" href="resume.css">
+<!-- <link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'> -->
+
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body id="top">
+<div id="cv" class="instaFade">
+  <form method="post" action="/indeex">
+	<div class="mainDetails">
+
+
+		<div id="name">
+			<h1 class="quickFade delayTwo">{{data.name}}</h1>
+		</div>
+
+		<div id="contactDetails" class="quickFade delayFour">
+			<ul>
+				<li>e: <a href="mailto:{{data.email}}" target="_blank">{{data.email}}</a></li>
+				<li>m: {{data.phone}}</li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+
+	<div id="mainArea" class="quickFade delayFive">
+		<section>
+			<article>
+				<div class="sectionTitle">
+					<h1>Personal Profile</h1>
+				</div>
+
+				<div class="sectionContent">
+					<p>{{data.personal}}</p>
+				</div>
+			</article>
+			<div class="clear"></div>
+		</section>
+
+
+		<section>
+			<div class="sectionTitle">
+				<h1>Work Experience</h1>
+			</div>
+
+			<div class="sectionContent">
+				<article>
+					<h2>{{data.title1}}</h2>
+					<p class="subDetails">{{data.ft}}</p>
+					<p>{{data.desciption1}}</p>
+  			</article>
+
+        <article>
+          <h2>{{data.title2}}</h2>
+          <p class="subDetails">{{data.ft}}</p>
+          <p>{{data.desciption2}}</p>
+        </article>
+
+			</div>
+			<div class="clear"></div>
+		</section>
+
+
+		<section>
+			<div class="sectionTitle">
+				<h1>Key Skills</h1>
+			</div>
+
+			<div class="sectionContent">
+				<ul class="keySkills">
+					<li>{{data.skill1}}</li>
+          <li>{{data.skill2}}</li>
+          <li>{{data.skill3}}</li>
+          <li>{{data.skill4}}</li>
+          <li>{{data.skill5}}</li>
+          <li>{{data.skill6}}</li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</section>
+
+
+		<section>
+			<div class="sectionTitle">
+				<h1>Education</h1>
+			</div>
+
+			<div class="sectionContent">
+				<article>
+					<h2>{{data.college1}}</h2>
+					<p>{{data.college1-details}}</p>
+				</article>
+
+				<article>
+					<h2>{{data.college2}}</h2>
+					<p>{{data.college2-details}}</p>
+				</article>
+			</div>
+			<div class="clear"></div>
+		</section>
+
+	</div>
+
+</form>
+</div>
+<!-- <script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3753241-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script> -->
+</body>
+</html>
